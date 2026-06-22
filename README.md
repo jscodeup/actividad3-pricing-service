@@ -2,6 +2,16 @@
 
 Microservicio de estimacion de tarifas. Actividad K8S: Docker, Helm, Kubernetes, ArgoCD y CI/CD.
 
+Wolfran Alirio Pinzon Murillo  - 0000393439
+Henry Julian Salazar Salcedo  - 0000396117
+Carlos Alberto Zambrano Braydi  - 0000395349
+Pedro David Ramos Salamanca  - 0000403935
+Jorge Antonio Vidal Orozco  - 0000393815
+
+Grupo 5
+
+
+
 **Repositorio:** https://github.com/jscodeup/actividad3-pricing-service  
 **Imagen Docker:** `hjsalazar9/pricing-service`
 
