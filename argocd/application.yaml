@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: pricing-service
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/jscodeup/actividad3-pricing-service.git
+    targetRevision: main
+    path: helm/pricing-service
+    helm:
+      valueFiles:
+        - values-dev.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
